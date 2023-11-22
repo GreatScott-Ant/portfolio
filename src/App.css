@@ -1,0 +1,104 @@
+body{
+  background-image:url(../public/images/papago-park-1.jpg);
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:100vh;
+  background-attachment: fixed;
+}
+
+.menustyle {
+  font-size: 2rem;
+  text-align:left;
+  font-family: "Bree Serif", serif;
+  font-weight: 700;
+  font-size: 3rem;
+  background-color: #F4BEA2;
+  opacity: .5;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.textbox {
+  width: 1070px;
+  height: 400px;
+  border: 1px solid black; 
+  background-color: #021503;
+  margin-top: 25vh;
+  /* position:absolute; top: 200px; */
+  opacity: .7;
+}
+
+.greeting {
+  /* width: 900px;
+  height: 300px; */
+  /* position:absolute; left:150px; top:200px; */
+  padding: 5px 10px 5px 10px;
+  text-align:center;
+  font-family: 'Bree Serif', serif;
+  font-size: 5rem;
+  color:#F4BEA2
+}
+
+.tagline {
+  /* width: 900px;
+  height: 300px; */
+  /* position:absolute; left:160px; top:350px; */
+  padding: 5px 10px 5px 10px;
+  text-align:center;
+  font-family: 'Aguafina Script', cursive;
+  font-size: 4rem;
+  color:#F5EFE5
+}
+
+.biobox {
+  width: 600px;
+  height: 550px;
+  border: 1px solid black; 
+  background-color: #021503;
+  position:absolute; left:60px; top:690px;
+  opacity: .7;
+}
+
+.title {
+  width: 900px;
+  height: 300px;
+  position:absolute; left:-90px; top:710px;
+  padding: 5px 10px 5px 10px;
+  text-align:center;
+  font-family: 'Aguafina Script', cursive;
+  font-size: 3rem;
+  color:#F4BEA2;
+}
+
+.parabio {
+  width: 600px;
+  height: 300px;
+  position:absolute; left:60px; top:780px;
+  padding: 5px 20px 10px 10px;
+  text-align:center;
+  font-family: 'Bree Serif', serif;
+  font-size: 16px;
+  color:#F4BEA2;
+}
+
+.imagebio {
+  background-image: url(../public/images/Anthony\ Holt\ Atlanta.svg);
+  width: 600px;
+  height: 550px;
+  border: 1px solid black; 
+  background-color: #021503;
+  position:absolute; left:675px; top:690px;
+}
+
+/* .skillbox {
+  width: 1070px;
+  height: 400px;
+  border: 1px solid black; 
+  background-color: #021503;
+  position:absolute; left:60px; top:1350px;
+  opacity: .7;
+} */
