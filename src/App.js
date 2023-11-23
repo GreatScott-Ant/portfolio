@@ -2,9 +2,8 @@ import React from 'react'
 import Menu from "./navigation/Menu";
 import Welcome from './components/Welcome'
 import "./App.css"
-import Bio from "./components/Bio"
+import About from "./components/About"
 import Skills from './components/Skills'
-// import PlaySound from './components/PlaySound'
 
 
 const App = () => {
@@ -13,14 +12,14 @@ const App = () => {
     <div className='menustyle'>
       <Menu />
     </div> 
-    {/* <div className=''></div> */}
-    {/* <PlaySound /> */}
-
+  
     <div className='flex-container'>
       <Welcome />
+      <About />
+      <Skills />
     </div>
-    <Bio />
-    <Skills />
+    
+    
 
     </>
   )

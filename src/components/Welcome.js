@@ -1,4 +1,5 @@
 import React from 'react'
+import PlaySound from './PlaySound'
 
 const Welcome = () => {
     return (
@@ -9,6 +10,7 @@ const Welcome = () => {
             <div className="greeting">Welcome to My Portfolio</div>
 
             <div className="tagline">"The CODES to My Success!"</div>
+            <PlaySound />
             </div>
         </div>
        
