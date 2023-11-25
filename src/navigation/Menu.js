@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import {
   Collapse,
   Navbar,
@@ -7,7 +7,7 @@ import {
   Nav,
   NavItem,
   NavLink,
-} from 'reactstrap';
+} from "reactstrap";
 
 const Menu = (props) => {
   const [collapsed, setCollapsed] = useState(true);
@@ -24,11 +24,11 @@ const Menu = (props) => {
         <Collapse isOpen={!collapsed} navbar>
           <Nav navbar>
             <NavItem>
-              <NavLink href="/components/">Bio</NavLink>
+              <NavLink href="/components/About">Bio</NavLink>
             </NavItem>
-            <NavLink href="/components/">Skill Stack</NavLink>
-            <NavLink href="/components/">Projects</NavLink>
-            <NavLink href="/components/">Contact</NavLink>
+            <NavLink href="/components/Skills">Skill Stack</NavLink>
+            <NavLink href="/components/Projects">Projects</NavLink>
+            <NavLink href="/components/Contact">Contact</NavLink>
             <NavItem>
               <NavLink href="https://github.com/reactstrap/reactstrap">
                 GitHub
@@ -39,6 +39,6 @@ const Menu = (props) => {
       </Navbar>
     </div>
   );
-}
+};
 
 export default Menu;
