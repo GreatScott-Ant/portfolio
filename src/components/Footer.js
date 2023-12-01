@@ -1,6 +1,7 @@
 import React from 'react'
 import MiniLinked from './MiniLinked'
 import MiniGit from './MiniGit'
+import MiniMail from './MiniMail'
 
 const Footer = () => {
 
@@ -12,6 +13,7 @@ const Footer = () => {
             </div>
 
             <div className="footerbutton">
+            <MiniMail />
             <MiniLinked />
             <MiniGit />
             </div>
