@@ -11,6 +11,7 @@ const Welcome = () => {
 
             <div className="tagline">"The CODES to My Success!"</div>
             <PlaySound />
+            <div className="callvibes">🎶Hover over to set the vibe..🎶</div>
             </div>
         </div>
        

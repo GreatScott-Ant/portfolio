@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Union from '../Union.svg'
 import {
   Collapse,
   Navbar,
@@ -17,14 +18,19 @@ const Menu = (props) => {
   return (
     <div>
       <Navbar>
-        <NavbarBrand href="/" className="me-auto">
-          Anthony Holt
+        <NavbarBrand href="/">
+          <img
+            alt="logo"
+            src={Union}
+            width={"180"}
+            height={"80"}
+          />
         </NavbarBrand>
         <NavbarToggler onClick={toggleNavbar} className="me-2" />
         <Collapse isOpen={!collapsed} navbar>
           <Nav navbar>
             <NavItem>
-              <NavLink href="/components/About">Bio</NavLink>
+              <NavLink href="./components/About">Bio</NavLink>
             </NavItem>
             <NavLink href="/components/Skills">Skill Stack</NavLink>
             <NavLink href="/components/Projects">Projects</NavLink>

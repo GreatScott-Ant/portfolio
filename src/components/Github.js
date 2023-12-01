@@ -6,7 +6,7 @@ const GitHubButton = () => {
 
   return (
     <a href={gitHubURL} target="_blank" rel="noopener noreferrer">
-      <button>
+      <button style={{ outline: 'none', background: 'transparent', border: 'none', padding: 0 }}>
         <img
         alt=""
         width={"45"}
