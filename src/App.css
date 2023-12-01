@@ -97,10 +97,30 @@ body{
   background-color: transparent;
 } 
 
+.pulse-button {
+  transition: transform 0.3s ease-in-out;
+}
+
+.pulse {
+  animation: pulseAnimation 1s infinite;
+}
+
+@keyframes pulseAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .bioflex {
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: 12em;
+  margin-bottom: 2em;
 }
 
 .biobox {
@@ -240,19 +260,62 @@ body{
   color:#472114;
 }
 
-/* .bird-container {
-  animation: animate-bird 4s linear infinite;
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #021503;
+  font-family: 'Bree Serif', serif;
+  font-size: 14px;
+  color: #F5EFE5;
+  padding: 10px;
+  text-align:left;
+  opacity: .7;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.footerbutton {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.bounce-button {
+  transition: transform 0.3s ease-in-out;
+}
+
+.bounce-button:hover {
+  animation: bounceAnimation 0.8s ease infinite;
+}
+
+@keyframes bounceAnimation {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+
+.bird-container {
+  animation: animate-bird 8s linear infinite;
 }
 
 .bird-container2 {
-  animation: animate-bird1 5s linear infinite;
+  animation: animate-bird1 10s linear infinite;
 }
 
 .bird,
 .bird2 {
   width: 352px;
-  height: 500px;
-  background-image: url(${bird});
+  height: 125px;
+  background-image: url(./images/bird.svg);
   background-size: auto 100%;
   animation: bird 1s -.5s steps(10) infinite;
 }
@@ -261,21 +324,15 @@ body{
   animation: bird1 1s -.5s steps(10) infinite;
 }
 
-@keyframes bird {
-  100% {
-    background-position: -3600px 0;
-  }
-}
-
 @keyframes animate-bird1 {
   0% {
     transform: translate(-20%, -20%) rotateY(0deg);
   }
   50% {
-    transform: translate(600px, 30%) scale(0.5) rotate(20deg);
+    transform: translate(600px, 10%) scale(0.5) rotate(20deg);
   }
   100% {
-    transform: translate(1200%, -100px) scale(0.1) rotateY(0deg);
+    transform: translate(1200%, -50px) scale(0.1) rotateY(0deg);
   }
 }
 
@@ -284,9 +341,9 @@ body{
     transform: translate(-20%, -20%) rotateY(0deg);
   }
   50% {
-    transform: translate(600px, 30%) scale(0.5) rotate(20deg);
+    transform: translate(600px, 10%) scale(0.5) rotate(20deg);
   }
   100% {
-    transform: translate(1200%, -100px) scale(0.1) rotateY(0deg);
+    transform: translate(1200%, -50px) scale(0.1) rotateY(0deg);
   }
-} */
+}
