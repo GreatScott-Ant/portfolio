@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import useSound from 'use-sound';
-import Water from '../Water.mp3';
+import Bounce from '/Users/learnacademy/Desktop/portfolio-learn-ant/src/New God Bounce.mp3';
 import pressPlay from '../play4.svg';
 import './PlaySound.css';
 
 const PlaySound = () => {
-  const [playSound, { stop }] = useSound(Water);
+  const [playSound, { stop }] = useSound(Bounce);
   const [isHovered, setIsHovered] = useState(false);
 
   return (

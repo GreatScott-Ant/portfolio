@@ -6,7 +6,7 @@ const About = () => {
 
     return (
 
-        <div id="bio">
+        <>
         <div className="bioflex">
             <div className="biobox">
 
@@ -28,7 +28,7 @@ const About = () => {
 
             <div className="imagebio"></div>
         </div>
-        </div>
+        </>
     )
 }
 

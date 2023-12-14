@@ -1,3 +1,4 @@
+/* bg */
 body{
   background-image:url(../public/images/papago-park-1.jpg);
   background-position:center;
@@ -7,27 +8,13 @@ body{
   background-attachment: fixed;
 }
 
-/* .menustyle {
-  font-size: 2rem;
-  text-align:left;
-  font-family: "Bree Serif", serif;
-  font-weight: 700;
-  background-color: #F4BEA2;
-  opacity: .7;
-  overflow:hidden;
-  position:sticky;
-  top: 0;
-  width: 100%;
-  z-index: 9999;
-} */
-
+/* navbar */
 .menustyle {
   font-size: 2rem;
   text-align:left;
   font-family: "Bree Serif", serif;
   font-weight: 700;
   background-color: rgba(244, 190, 162, 0.4);
-  /* color:#021503; */
   opacity: 1;
   position:sticky;
   top: 0;
@@ -35,11 +22,12 @@ body{
   z-index: 9999;
 }
 
+/* navbar text */
 .menu-text {
   color:#021503 !important;
-  transition: color 0.3s ease;
 }
 
+/* hover underline animation - navbar */
 .menu-text:hover {
   text-decoration: underline;
 }
@@ -243,6 +231,17 @@ body{
   font-family: 'Aguafina Script', cursive;
   font-size: 3rem;
   color:#F4BEA2;
+  align-items: center;
+}
+
+.project-construct {
+  background-image: url(https://t3.ftcdn.net/jpg/02/33/17/50/360_F_233175040_hwqRyiZlQkXimeLz2AIZhajyfiU9El1m.jpg);
+  width: 500px;
+  height: 250px;
+  border: 1px solid black;
+  background-position:center;
+  background-repeat: no-repeat;
+  margin-left: 300px;
 }
 
 .contactflex {
@@ -335,51 +334,5 @@ body{
   }
   60% {
     transform: translateY(-5px);
-  }
-}
-
-
-.bird-container {
-  animation: animate-bird 8s linear infinite;
-}
-
-.bird-container2 {
-  animation: animate-bird1 10s linear infinite;
-}
-
-.bird,
-.bird2 {
-  width: 352px;
-  height: 125px;
-  background-image: url(./images/bird.svg);
-  background-size: auto 100%;
-  animation: bird 1s -.5s steps(10) infinite;
-}
-
-.bird2 {
-  animation: bird1 1s -.5s steps(10) infinite;
-}
-
-@keyframes animate-bird1 {
-  0% {
-    transform: translate(-20%, -20%) rotateY(0deg);
-  }
-  50% {
-    transform: translate(600px, 10%) scale(0.5) rotate(20deg);
-  }
-  100% {
-    transform: translate(1200%, -50px) scale(0.1) rotateY(0deg);
-  }
-}
-
-@keyframes animate-bird {
-  0% {
-    transform: translate(-20%, -20%) rotateY(0deg);
-  }
-  50% {
-    transform: translate(600px, 10%) scale(0.5) rotate(20deg);
-  }
-  100% {
-    transform: translate(1200%, -50px) scale(0.1) rotateY(0deg);
   }
 }

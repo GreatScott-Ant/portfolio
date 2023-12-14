@@ -29,7 +29,7 @@ const Menu2 = (props) => {
           </NavItem>
           <NavItem>
             <NavLink tag={Link} to="/skill-stack" className="menu-text">
-              Skill Stack
+              Skill Stack  
             </NavLink>
           </NavItem>
           <NavItem>
@@ -49,3 +49,4 @@ const Menu2 = (props) => {
 };
 
 export default Menu2;
+
